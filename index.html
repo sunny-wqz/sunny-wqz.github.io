@@ -19,19 +19,57 @@
 				0%{transform: rotateX(0deg) rotateY(0deg)}
 				100%{transform: rotateX(360deg) rotateY(360deg)}
 			}
+			h2{
+				text-shadow: 5px 5px 5px #FF0000;
+			}
+			.title{
+				position: fixed;
+				left: 20px;
+				top: 200px;
+				width:100px;
+	            height:30px;
+	            border-radius: 10px;
+	            background: brown ;
+	            transition:width 2s;
+	            overflow: hidden;
+			}
+			.title:hover{
+				height: 200px;
+			}
+			.title p{
+				line-height: 30px;
+				text-align: center;
+				color: #fff;
+			}
+			.title p img{
+				width: 25px;
+				height: 25px;
+			}
+			.title .bbq{
+				position: relative;				
+				line-height: 200px；
+			}
+			.title .bbq img{
+				position: absolute;
+				left: -37px;
+				top: 70px;
+				width: 100px;
+				height: 100px;
+			}
+			
 			.box{				
 		    	width:300px;
             	height:300px;
             	position:relative;
             	margin:auto;
-            	margin-top:150px;
+            	margin-top:240px;
             	transform-style:preserve-3d;
             	transform:rotateX(-10deg);
             	animation: move 10s;
             	animation-iteration-count: infinite;
 		    	animation-timing-function: linear;
 			}
-			.box:hove{
+			.box:hover{
 				animation-play-state: paused
 			}
 			.box>div{
@@ -44,13 +82,21 @@
 		</style>
 	</head>
 	<body>
+		<div class="title">
+	   		<p><img src="/img/timg.jpg" alt="">点我</p>
+	   		<p class="bbq">瞎点啥？？？合上<img src="/img/hah.jpg" alt=""></p>
+	   	</div>
 	   <div class="box">
+	   	
+	   	<div>
+	   		<h2>宇宙第一帅的半个薛之谦</h2>
+	   	</div>
 	     <div style="transform: rotateY(0deg) translateZ(260px);"><img src="/img/1.png" alt="" /></div>
 	     <div style="transform: rotateY(60deg) translateZ(260px);"><img src="/img/2.png" alt="" /></div>
 	     <div style="transform: rotateY(120deg) translateZ(260px);"><img src="/img/3.png" alt="" /></div>
 	     <div style="transform: rotateY(180deg) translateZ(260px);"><img src="/img/4.png" alt="" /></div>
 	     <div style="transform: rotateY(240deg) translateZ(260px);"><img src="/img/5.png" alt="" /></div>
-	     <div style="transform: rotateY(300deg) translateZ(260px);"><img src="/img/6.png" alt="" /></div>
+	     <div style="transform: rotateY(300deg) translateZ(260px);"><img src="/img/6.png" alt="" /></div>    
 	   </div>
 	</body>
 </html>
